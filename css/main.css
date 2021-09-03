@@ -7,6 +7,8 @@
     padding: 0;
 }
 
+/* ------------------------------- Block HEADER ------------------------------- */
+
 .header {
     width: 100vw;
     height: 120px;
@@ -20,7 +22,7 @@
     align-items: center;
     margin: 0 auto;
     padding-top: 18px;
-    width: 1165px;
+    width: 74.8%;
 }
 
 .logo {
@@ -58,7 +60,7 @@
 }
 
 .header__menu {
-    width: 550px;
+    width: 35.1%;
 }
 
 .header__list {
@@ -83,4 +85,113 @@
 
 .header__link:hover {
     color: var(--color-picton-blue);
+}
+
+/* ------------------------------- Block ABOUT ------------------------------- */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 74.8%;
+}
+
+.about__title {
+    margin-top: 35px;
+    font-family: 'Chalet Comprime - Cologne Eighty';
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 90px;
+    text-transform: uppercase;
+    color: var(--color-picton-blue);
+}
+
+.about__subtitle {
+    font-family: 'Chalet Comprime - Cologne Eighty';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: var(--color-dove-gray);
+}
+
+.about__cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 47px;
+    width: 100%;
+}
+
+.about__card {
+}
+
+.card {
+    position: relative;
+    width: 364px;
+}
+
+.card__image {
+}
+
+.card__description {
+    padding: 58px 29px 25px;
+    background: var(--color-mine-shaft);
+}
+
+.card:hover .card__description {
+    background: var(--color-picton-blue);
+}
+
+.card__title {
+    font-family: 'Chalet Comprime - Cologne Eighty';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: var(--color-white);
+    text-align: center;
+}
+
+.card__text {
+    margin-top: 13px;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 20px;
+    color: var(--color-white);
+    text-align: center;
+}
+
+.card__hexagon {
+    position: absolute;
+    top: 280px;
+    left: 148px;
+    width: 66px;
+    height: 42px;
+    background: var(--color-white);
+}
+
+.card__hexagon:before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -14px;
+    left: 0;
+    border-left: 34px solid transparent;
+    border-right: 34px solid transparent;
+    border-bottom: 16px solid var(--color-white);
+}
+
+.card__hexagon:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: -17px;
+    left: 0;
+    border-left: 34px solid transparent;
+    border-right: 34px solid transparent;
+    border-top: 18px solid var(--color-white);
 }
