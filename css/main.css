@@ -1,1 +1,86 @@
 @import url("fonts.css");
+@import url("variables.css");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100vw;
+    height: 120px;
+    opacity: 0.94;
+    box-shadow: 0px 2px 5px 0px var(--color-black-opacity);
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 18px;
+    width: 1165px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo__image {
+    width: 53px;
+    height: 61px;
+}
+
+.logo__text {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo__name {
+    font-family: 'Chalet Comprime - Cologne Eighty';
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 0.95;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-mine-shaft);
+}
+
+.logo__description {
+    font-family: 'Proxima Nova';
+    font-weight: 600;
+    font-size: 10.3px;
+    line-height: 1.2;
+    letter-spacing: 0.004em;
+    color: var(--color-mine-shaft-light);
+}
+
+.header__menu {
+    width: 550px;
+}
+
+.header__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__item {
+    list-style: none;
+}
+
+.header__link {
+    text-decoration: none;
+    font-family: 'Chalet Comprime - Cologne Eighty';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-dove-gray);
+}
+
+.header__link:hover {
+    color: var(--color-picton-blue);
+}
