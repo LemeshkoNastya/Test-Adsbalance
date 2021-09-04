@@ -247,6 +247,7 @@
 
 .services__image {
     position: relative;
+    cursor: pointer;
 }
 
 .services__hexagon {
@@ -524,6 +525,10 @@
     color: var(--color-white);
 }
 
+.contact__link {
+    text-decoration: none;
+}
+
 .contact__message {
     width: 500px;
 }
@@ -572,4 +577,63 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--color-white);
+    cursor: pointer;
+}
+
+/* ------------------------------- Block FOOTER ------------------------------- */
+
+.footer {
+    width: 100vw;
+    height: 64px;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 15px;
+    /* width: 74.8%; */
+    width: 1170px;
+}
+
+.footer__text {
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 12px;
+    letter-spacing: -0.2px;
+    color: var(--color-black);
+    opacity: 0.5;
+}
+
+.footer__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    width: 90px;
+}
+
+.footer__icon {
+    fill: var(--color-silver-chalice);
+    cursor: pointer;
+}
+
+.footer__icon:hover {
+    fill: var(--color-picton-blue);
+}
+
+.footer__facebook {
+    width: 12px;
+    height: 24px;
+}
+
+.footer__twitter {
+    width: 30px;
+    height: 21px;
+}
+
+.footer__skype {
+    width: 23px;
+    height: 23px;
 }
