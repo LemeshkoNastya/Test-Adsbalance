@@ -7,6 +7,22 @@
     padding: 0;
 }
 
+.title {
+    font-family: 'Chalet Comprime - Cologne Eighty';
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 90px;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-family: 'Chalet Comprime - Cologne Eighty';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
 /* ------------------------------- Block HEADER ------------------------------- */
 
 .header {
@@ -101,20 +117,10 @@
 
 .about__title {
     margin-top: 35px;
-    font-family: 'Chalet Comprime - Cologne Eighty';
-    font-weight: 400;
-    font-size: 90px;
-    line-height: 90px;
-    text-transform: uppercase;
     color: var(--color-picton-blue);
 }
 
 .about__subtitle {
-    font-family: 'Chalet Comprime - Cologne Eighty';
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 24px;
-    text-transform: uppercase;
     color: var(--color-dove-gray);
 }
 
@@ -198,4 +204,108 @@
     border-left: 34px solid transparent;
     border-right: 34px solid transparent;
     border-top: 18px solid var(--color-white);
+}
+
+/* ------------------------------- Block SERVICES ------------------------------- */
+
+.services {
+    width: 100vw;
+    background: url('../img/background-services.png');
+}
+
+.services__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    /* width: 74.8%; */
+    width: 1170px;
+}
+
+.services__title {
+    margin-top: 58px;
+    color: var(--color-white);
+}
+
+.services__subtitle {
+    color: var(--color-white);
+}
+
+.services__items {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 64px;
+    margin-bottom: 105px;
+}
+
+.services__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services__image {
+    position: relative;
+}
+
+.services__hexagon {
+    width: 230px;
+    height: 250px;
+    fill: var(--color-white-opacity);
+}
+
+.services__icon {
+    position: absolute;
+    top: 80px;
+    left: 45px;
+    width: 131px;
+    height: 92px;
+    fill: var(--color-white);
+}
+
+.icon-heart {
+    top: 80px;
+    left: 45px;
+    width: 131px;
+    height: 92px;
+}
+
+.icon-brain {
+    top: 72px;
+    left: 68px;
+    width: 95px;
+    height: 105px;
+}
+
+.icon-hnee {
+    top: 58px;
+    left: 92px;
+    width: 50px;
+    height: 132px;
+}
+
+.icon-human-bones {
+    top: 78px;
+    left: 76px;
+    width: 86px;
+    height: 96px;
+}
+
+.services__image:hover .services__hexagon {
+    fill: var(--color-white);
+}
+
+.services__image:hover .services__icon {
+    fill: var(--color-picton-blue);
+}
+
+.services__text {
+    margin-top: 24px;
+    font-family: 'Chalet Comprime - Cologne Eighty';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: var(--color-white);
 }
