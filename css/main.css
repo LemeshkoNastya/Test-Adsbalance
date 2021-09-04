@@ -309,3 +309,83 @@
     text-transform: uppercase;
     color: var(--color-white);
 }
+
+/* ------------------------------- Block TEAM ------------------------------- */
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    /* width: 74.8%; */
+    width: 1170px;
+}
+
+.team__title {
+    margin-top: 35px;
+    color: var(--color-picton-blue);
+}
+
+.team__subtitle {
+    color: var(--color-dove-gray);
+}
+
+.team__info {
+    display: flex;
+    margin-top: 46px;
+    margin-bottom: 60px;
+}
+
+.team__doctor {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 234px;
+}
+
+.team__doctor:nth-child(2n) {
+    flex-direction: column-reverse;
+}
+
+.team__image {
+    width: 235px;
+    height: 235px;
+}
+
+.team__triangle {
+    position: absolute;
+    top: 220px;
+}
+
+.team__triangle_rotate {
+    top: 235px;
+    transform: rotate(180deg);
+}
+
+.team__description {
+    padding: 16px 10px 25px 14px;
+    background: url('../img/background-card-active.png');
+}
+
+.team__description_active {
+    background: url('../img/background-card.png');
+}
+
+.team__name {
+    font-family: 'Chalet Comprime - Cologne Eighty';
+    font-size: 30px;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--color-white);
+}
+
+.team__text {
+    margin-top: 10px;
+    padding-right: 4px;
+    font-family: 'Open Sans';
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color: var(--color-white);
+}
