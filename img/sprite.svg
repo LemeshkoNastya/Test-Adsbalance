@@ -43,4 +43,9 @@
   <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 42px 42px" id="arrow">
     <path fill-rule="evenodd" d="M21.000,-0.000 C32.598,-0.000 42.000,9.402 42.000,20.999 C42.000,32.598 32.598,42.000 21.000,42.000 C9.402,42.000 -0.000,32.598 -0.000,20.999 C-0.000,9.402 9.402,-0.000 21.000,-0.000 ZM27.885,9.651 L20.338,9.664 L8.946,21.013 L20.338,32.348 L27.872,32.348 L17.442,20.947 L27.885,9.651 Z"></path>
   </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" id="burger">
+    <line y1="4" x2="30" y2="4" stroke="#383838" stroke-width="4"></line>
+    <line y1="15" x2="30" y2="15" stroke="#383838" stroke-width="4"></line>
+    <line y1="26" x2="30" y2="26" stroke="#383838" stroke-width="4"></line>
+  </symbol>
 </svg>

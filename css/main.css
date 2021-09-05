@@ -38,7 +38,6 @@
     align-items: center;
     margin: 0 auto;
     padding-top: 18px;
-    /* width: 74.8%; */
     width: 1170px;
 }
 
@@ -758,4 +757,89 @@
 .footer__skype {
     width: 23px;
     height: 23px;
+}
+
+/* ------------------------------- Block BURGER ------------------------------- */
+
+.burger {
+    display: none;
+    width: 20px;
+    height: 20px;
+}
+
+.burger__icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* ------------------------------- ADAPTIVE ------------------------------- */
+
+@media (max-width: 1300px) {
+
+    .header__container {
+        width: 90%;
+    }
+    
+}
+
+@media (max-width: 992px) {
+
+    .header__menu {
+        width: 350px;
+    }
+
+    .header__link {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .header__container {
+        padding-top: 34px;
+    }
+
+    .header__menu {
+        width: 250px;
+    }
+
+    .header__link {
+        font-size: 14px;
+    }
+    
+    .logo__image {
+        width: 35px;
+        height: 40px;
+    }
+
+    .logo__text {
+        margin-left: 10px;
+    }
+
+    .logo__name {
+        font-size: 40px;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .logo__description {
+        width: 90px;
+    }
+
+    .logo__image {
+        width: 40px;
+        height: 48px;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    .burger {
+        display: block;
+    }
+
+    .header__menu {
+        display: none;
+    }
 }
