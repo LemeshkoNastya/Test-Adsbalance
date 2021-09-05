@@ -12,6 +12,8 @@ const classBurgerRotate = '.burger__rotate';
 const classSidebarActive = 'burger__sidebar_active';
 const classTitleCard = '.card__title';
 const classLetterCard = '.card__letter';
+const attributeHref = 'href';
+const classHeaderListLink = '.header__link';
 
 // Variables
 const burger = document.querySelector(classBurger);
@@ -21,6 +23,7 @@ const shadowed = document.querySelector(classShadowed);
 const links = document.querySelectorAll(classLink);
 const titleCards = document.querySelectorAll(classTitleCard);
 const letterCards = document.querySelectorAll(classLetterCard);
+const headerListLink = document.querySelectorAll(classHeaderListLink);
 
 // Functions
 const addContentArrowSlider = () => {
@@ -47,6 +50,25 @@ const showBurger = () => {
     sidebar.classList.add(classSidebarActive);
 }
 
+const scrollElement = (element) => {
+    element.addEventListener('click', function (e) {
+        e.preventDefault();
+    
+        const href = this.getAttribute(attributeHref).substring(1);
+        const scrollTarget = document.getElementById(href);
+
+        if (scrollTarget) {
+            scrollTarget.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+};
+
+const scrollSection = (listLink) => {
+    listLink.forEach(link => {
+        scrollElement(link);
+    });
+};
+
 // Event
 window.addEventListener('load', () => {
     addContentArrowSlider();
@@ -68,8 +90,10 @@ links.forEach(link => {
     link.addEventListener('click', () => {
         hideBurger();
     });
-})
+});
 
 titleCards.forEach((title, index) => {
     letterCards[index].innerHTML = title.innerHTML.slice(0, 1);
-})
+});
+
+scrollSection(headerListLink);
