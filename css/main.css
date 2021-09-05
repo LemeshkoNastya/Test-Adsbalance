@@ -714,7 +714,6 @@
     align-items: center;
     margin: 0 auto;
     padding-top: 15px;
-    /* width: 74.8%; */
     width: 1170px;
 }
 
@@ -842,6 +841,10 @@
 
     .contact__message {
         width: 400px;
+    }
+
+    .footer__container {
+        width: 90%;
     }
 }
 
@@ -1072,6 +1075,19 @@
 
     .contact__link {
         text-align: center;
+    }
+
+    .footer__container {
+        flex-direction: column-reverse;
+        padding-top: 35px;
+    }
+
+    .footer__icons {
+        margin-bottom: 20px;
+    }
+
+    .footer__text {
+        margin-bottom: 35px;
     }
 }
  
