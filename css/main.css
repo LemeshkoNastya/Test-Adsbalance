@@ -526,7 +526,6 @@
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    /* width: 74.8%; */
     width: 1170px;
     background: url(../img/background-services.png);
 }
@@ -832,6 +831,18 @@
     .team__subtitle  {
         text-align: center;
     }
+
+    .contact__container {
+        width: 90%;
+    }
+
+    .contact__line {
+        width: 400px;
+    }
+
+    .contact__message {
+        width: 400px;
+    }
 }
 
 @media (max-width: 1025px) {
@@ -893,6 +904,32 @@
     .card__hexagon {
         top: 212px;
         left: 107px;
+    }
+
+    .contact__content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contact__line {
+        width: 500px;
+    }
+
+    .contact__message {
+        margin-top: 50px;
+        width: 500px;
+    }
+
+    .contact__info {
+        margin-top: 50px;
+    }
+
+    .contact__info-title {
+        text-align: center;
+    }
+
+    .contact__form {
+        align-items: center;
     }
 }
 
@@ -957,6 +994,14 @@
     .services__items {
         width: 490px;
     }
+
+    .contact__line {
+        width: 400px;
+    }
+
+    .contact__message {
+        width: 400px;
+    }
 }
 
 @media (max-width: 550px) {
@@ -993,18 +1038,6 @@
         top: 220px;
         transform: rotate(0deg);
     }
-
-    /* .team__doctor:nth-child(2), .team__doctor:nth-child(3) {
-        margin-top: 0;
-    }
-
-    .team__doctor:nth-child(4), .team__doctor:nth-child(5) {
-        margin-top: 0;
-    }
-
-    .team__doctor:nth-child(2n) {
-        flex-direction: column;
-    } */
 }
 
 @media (max-width: 480px) {
@@ -1019,6 +1052,26 @@
 
     .subtitle {
         font-size: 18px;
+    }
+
+    .contact__line {
+        width: 100%;
+    }
+
+    .contact__message {
+        width: 300px;
+    }
+
+    .contact__info {
+        width: 300px;
+    }
+
+    .contact__item {
+        flex-direction: column;
+    }
+
+    .contact__link {
+        text-align: center;
     }
 }
  
