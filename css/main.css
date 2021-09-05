@@ -330,6 +330,22 @@
     border-top: 18px solid var(--color-white);
 }
 
+.card__letter {
+    position: absolute;
+    top: 270px;
+    left: 168px;
+    font-family: 'Chalet Comprime - Cologne Eighty';
+    font-weight: 400;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: var(--color-mine-shaft);
+    z-index: 1;
+}
+
+.card:hover .card__letter {
+    color: var(--color-picton-blue);
+}
+
 /* ------------------------------- Block SERVICES ------------------------------- */
 
 .services {

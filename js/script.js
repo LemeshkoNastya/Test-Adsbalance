@@ -10,6 +10,8 @@ const classDisplayNone = 'none';
 const classDisplayBlock = 'block';
 const classBurgerRotate = '.burger__rotate';
 const classSidebarActive = 'burger__sidebar_active';
+const classTitleCard = '.card__title';
+const classLetterCard = '.card__letter';
 
 // Variables
 const burger = document.querySelector(classBurger);
@@ -17,6 +19,8 @@ const rotateBurger = document.querySelector(classBurgerRotate);
 const sidebar = document.querySelector(classSidebar);
 const shadowed = document.querySelector(classShadowed);
 const links = document.querySelectorAll(classLink);
+const titleCards = document.querySelectorAll(classTitleCard);
+const letterCards = document.querySelectorAll(classLetterCard);
 
 // Functions
 const addContentArrowSlider = () => {
@@ -64,4 +68,8 @@ links.forEach(link => {
     link.addEventListener('click', () => {
         hideBurger();
     });
+})
+
+titleCards.forEach((title, index) => {
+    letterCards[index].innerHTML = title.innerHTML.slice(0, 1);
 })
