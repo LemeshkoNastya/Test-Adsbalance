@@ -41,5 +41,5 @@ const addContentSlides = () => {
 // Event
 window.addEventListener('load', () => {
     addContentArrowSlider();
-    addContentSlides();
+    // addContentSlides();
 });

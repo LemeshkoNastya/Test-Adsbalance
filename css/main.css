@@ -118,19 +118,23 @@
 }
 
 .slider__item {
-    width: 100%;
-    height: 100%;
+    background: url('../img/background-main.jpg') no-repeat;
+    background-size: 100% calc(100vh - 120px);
 }
 
-.slider__item img {
-    width: 100%;
-    height: 100%;
+.slider__item:nth-child(2) {
+    background: url('../img/background-main2.jpg') no-repeat;
+    background-size: 100% calc(100vh - 120px);
+}
+
+.slider__item:nth-child(3) {
+    background: url('../img/background-main3.jpg') no-repeat;
+    background-size: 100% calc(100vh - 120px);
 }
 
 .slider__info {
-    position: absolute;
-    top: 25%;
-    margin-left: 16%;
+    margin-top: 11%;
+    margin-left: 12%;
 }
 
 .slider__title {
@@ -186,9 +190,6 @@
 
 .slick-track{
     display: flex;
-}
-
-.slick-slide{
     width: 100%;
     height: 100%;
 }
@@ -779,22 +780,6 @@
         width: 90%;
     }
 
-    .slider__title {
-        font-size: 100px;
-    }
-
-    .slider__subtitle {
-        margin-top: -5px;
-        font-size: 26px;
-    }
-
-    .slider__button {
-        margin-top: 50px;
-        width: 180px;
-        height: 50px;
-        font-size: 24px;
-    }
-
     .about {
         width: 90%;
     }
@@ -869,22 +854,19 @@
         font-size: 18px;
     }
 
-    .slider__title {
-        font-size: 60px;
+    .slider__item {
+        background: url(../img/background-main.jpg) -150px no-repeat;
+        background-size: 150% calc(100vh - 120px);
     }
 
-    .slider__subtitle {
-        margin-top: 0px;
-        margin-left: 5px;
-        font-size: 16px;
+    .slider__item:nth-child(2) {
+        background: url(../img/background-main2.jpg) -150px no-repeat;
+        background-size: 150% calc(100vh - 120px);
     }
-
-    .slider__button {
-        margin-top: 50px;
-        margin-left: 5px;
-        width: 120px;
-        height: 40px;
-        font-size: 16px;
+    
+    .slider__item:nth-child(3) {
+        background: url(../img/background-main3.jpg) -300px no-repeat;
+        background-size: 150% calc(100vh - 120px);
     }
 
     .about__cards {
@@ -973,6 +955,14 @@
         font-size: 40px;
     }
 
+    .slider__title {
+        font-size: 120px;
+    }
+
+    .slider__button {
+        margin-top: 50px;
+    }
+    
     .title {
         font-size: 60px;
     }
@@ -1007,6 +997,24 @@
     }
 }
 
+@media (max-width: 650px) {
+
+    .slider__title {
+        font-size: 80px;
+    }
+
+    .slider__subtitle {
+        margin-top: -10px;
+        margin-left: 6px;
+        font-size: 24px;
+    }
+
+    .slider__info {
+        margin-top: 25%;
+        margin-left: 20%;
+    }
+}
+
 @media (max-width: 550px) {
     .logo__description {
         width: 90px;
@@ -1015,6 +1023,21 @@
     .logo__image {
         width: 40px;
         height: 48px;
+    }
+
+    .slider__item {
+        background: url(../img/background-main.jpg) -250px no-repeat;
+        background-size: 200% calc(100vh - 120px);
+    }
+
+    .slider__item:nth-child(2) {
+        background: url(../img/background-main2.jpg) -250px no-repeat;
+        background-size: 200% calc(100vh - 120px);
+    }
+    
+    .slider__item:nth-child(3) {
+        background: url(../img/background-main3.jpg) -450px no-repeat;
+        background-size: 200% calc(100vh - 120px);
     }
 
     .services__items {
@@ -1051,6 +1074,34 @@
 
     .header__menu {
         display: none;
+    }
+
+    .slider__item {
+        background: url(../img/background-main.jpg) -250px no-repeat;
+        background-size: 250% calc(100vh - 120px);
+    }
+
+    .slider__item:nth-child(2) {
+        background: url(../img/background-main2.jpg) -380px no-repeat;
+        background-size: 250% calc(100vh - 120px);
+    }
+    
+    .slider__item:nth-child(3) {
+        background: url(../img/background-main3.jpg) -450px no-repeat;
+        background-size: 250% calc(100vh - 120px);
+    }
+
+    .slider__info {
+        margin-left: 0;
+    }
+
+    .slider__title, .slider__subtitle {
+        text-align: center;
+    }
+
+    .slider__button {
+        margin-top: 200px;
+        margin-left: calc(50% - 120px);
     }
 
     .subtitle {
@@ -1092,6 +1143,22 @@
 }
  
 @media (max-width: 320px) {
+
+    .slider__item {
+        background: url(../img/background-main.jpg) -300px no-repeat;
+        background-size: 300% calc(100vh - 120px);
+    }
+
+    .slider__item:nth-child(2) {
+        background: url(../img/background-main2.jpg) -415px no-repeat;
+        background-size: 300% calc(100vh - 120px);
+    }
+    
+    .slider__item:nth-child(3) {
+        background: url(../img/background-main3.jpg) -530px no-repeat;
+        background-size: 300% calc(100vh - 120px);
+    }
+
     .team__info {
         width: 100%;
     }
