@@ -772,6 +772,61 @@
     height: 20px;
 }
 
+.burger__rotate {
+    position: fixed;
+    display: none;
+    top: 55px;
+    right: 25px;
+    transform: rotate(90deg);
+    z-index: 2;
+}
+
+.burger__sidebar {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background: var(--color-picton-blue);
+    opacity: 0;
+    transition: all 1s;
+    z-index: 1;
+}
+
+.burger__sidebar_active {
+    right: 0;
+    opacity: 1;
+}
+
+.burger__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.burger__item {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.burger__link {
+    text-decoration: none;
+    font-family: 'Chalet Comprime - Cologne Eighty';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-black-opacity50);
+}
+
+.burger__link:hover {
+    color: var(--color-black);
+}
+
 /* ------------------------------- ADAPTIVE ------------------------------- */
 
 @media (max-width: 1300px) {
@@ -1070,6 +1125,7 @@
     
     .burger {
         display: block;
+        cursor: pointer;
     }
 
     .header__menu {
@@ -1139,6 +1195,16 @@
 
     .footer__text {
         margin-bottom: 35px;
+    }
+
+    .shadowed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+        width: 100%;
+        height: 100vh;
+        background: var(--color-black-opacity50);
     }
 }
  

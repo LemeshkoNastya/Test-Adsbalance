@@ -1,15 +1,22 @@
 // Majic String
 const classArrowSlider = '.slick-arrow';
-const classSlider = '.slider__item';
 const classArrow = 'arrow';
 const urlArrowSprite = '../img/sprite.svg#arrow';
-const classInfoSlide = 'slider__info';
-const classTitleSlide = 'slider__title';
-const classSubtitleSlide = 'slider__subtitle';
-const classButtonSlide = 'slider__button';
-const titleSlide = 'providing';
-const subtitleSlide = 'highquality service for men & women';
-const textButtonSlide = 'learn more';
+const classBurger = '.burger';
+const classSidebar = '.burger__sidebar';
+const classShadowed = '.shadowed';
+const classLink = '.burger__link';
+const classDisplayNone = 'none';
+const classDisplayBlock = 'block';
+const classBurgerRotate = '.burger__rotate';
+const classSidebarActive = 'burger__sidebar_active';
+
+// Variables
+const burger = document.querySelector(classBurger);
+const rotateBurger = document.querySelector(classBurgerRotate);
+const sidebar = document.querySelector(classSidebar);
+const shadowed = document.querySelector(classShadowed);
+const links = document.querySelectorAll(classLink);
 
 // Functions
 const addContentArrowSlider = () => {
@@ -24,22 +31,37 @@ const addContentArrowSlider = () => {
     });
 };
 
-const addContentSlides = () => {
-    const slides = document.querySelectorAll(classSlider);
+const hideBurger = () => {
+    shadowed.style.display = classDisplayNone;
+    rotateBurger.style.display = classDisplayNone;
+    sidebar.classList.remove(classSidebarActive);
+}
 
-    slides.forEach(slide => {
-        slide.innerHTML += `
-            <div class=${classInfoSlide}>
-                <h2 class=${classTitleSlide}>${titleSlide}</h2>
-                <p class=${classSubtitleSlide}>${subtitleSlide}</p>
-                <button class=${classButtonSlide}>${textButtonSlide}</button>
-            </div>
-        `;
-    });
-};
+const showBurger = () => {
+    shadowed.style.display = classDisplayBlock;
+    rotateBurger.style.display = classDisplayBlock;
+    sidebar.classList.add(classSidebarActive);
+}
 
 // Event
 window.addEventListener('load', () => {
     addContentArrowSlider();
-    // addContentSlides();
 });
+
+burger.addEventListener('click', () => {
+    showBurger();
+});
+
+rotateBurger.addEventListener('click', () => {
+    hideBurger();
+});
+
+shadowed.addEventListener('click', () => {
+    hideBurger();
+});
+
+links.forEach(link => {
+    link.addEventListener('click', () => {
+        hideBurger();
+    });
+})
