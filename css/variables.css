@@ -9,4 +9,5 @@
     --color-deep-sea-green: #084a5c;
     --color-silver-chalice: #b1b1b1;
     --color-black: #000000;
+    --color-black-opacity50: rgba(0, 0, 0, 0.5);
 }
